@@ -99,13 +99,13 @@ namespace Remator
 				semanticInput = args.Result.Semantics["input"].Value;
 			}
 
-			Console.WriteLine(string.Format("engine_SpeechRecognized: \"{0}\"", args.Result.Text));
+			Console.WriteLine(string.Format("speech_Recognized: \"{0}\"", args.Result.Text));
 			Console.WriteLine(string.Format(
 				"{0:P2} - Trigger: '{1}', Command: '{2}', Input: '{3}'",
 				args.Result.Confidence,
 				semanticTrigger.ToString(),
 				semanticCommand,
-				semanticInput.ToString()
+				semanticInput
 			));
 
 			if (!string.IsNullOrEmpty(semanticCommand))
@@ -147,6 +147,7 @@ namespace Remator
 		[Command("it works")]
 		public void ITWorks(SpeechRecognizedEventArgs args)
 		{
+			Console.WriteLine(args.Result.Semantics["trigger"].Value.ToString());
 			Console.WriteLine("It works!");
 		}
 
