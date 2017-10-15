@@ -101,13 +101,13 @@ namespace Remator
 			Console.WriteLine(DateTime.Now.ToLocalTime().ToShortTimeString());
 		}
 
-		[Command("mator")]
+		/*[Command("mator")]
 		[Command("mater")]
 		public void Mator()
 		{
 			Remator.synth_SynthesizeSpeech("I didn't catch that, try again?");
 			//Console.WriteLine("mator!!!!!");
-		}
+		}*/
 	}
 
 	[System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple = true)]
