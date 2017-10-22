@@ -29,12 +29,14 @@
 		private void InitializeComponent()
 		{
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.trackOutputVolume = new System.Windows.Forms.TrackBar();
-			this.label7 = new System.Windows.Forms.Label();
+			this.trackOutputSpeed = new System.Windows.Forms.TrackBar();
+			this.label6 = new System.Windows.Forms.Label();
 			this.comboOutputVoice = new System.Windows.Forms.ComboBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.comboOutputDevice = new System.Windows.Forms.ComboBox();
+			this.trackOutputVolume = new System.Windows.Forms.TrackBar();
+			this.label7 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
@@ -44,13 +46,11 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.buttonCancel = new System.Windows.Forms.Button();
 			this.buttonConfirm = new System.Windows.Forms.Button();
-			this.trackOutputSpeed = new System.Windows.Forms.TrackBar();
-			this.label6 = new System.Windows.Forms.Label();
 			this.groupBox3.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackOutputSpeed)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackOutputVolume)).BeginInit();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.trackInputGain)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackOutputSpeed)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox3
@@ -70,23 +70,23 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Output";
 			// 
-			// trackOutputVolume
+			// trackOutputSpeed
 			// 
-			this.trackOutputVolume.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.trackOutputSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.trackOutputVolume.Location = new System.Drawing.Point(112, 273);
-			this.trackOutputVolume.Name = "trackOutputVolume";
-			this.trackOutputVolume.Size = new System.Drawing.Size(236, 45);
-			this.trackOutputVolume.TabIndex = 10;
+			this.trackOutputSpeed.Location = new System.Drawing.Point(100, 73);
+			this.trackOutputSpeed.Name = "trackOutputSpeed";
+			this.trackOutputSpeed.Size = new System.Drawing.Size(236, 45);
+			this.trackOutputSpeed.TabIndex = 12;
 			// 
-			// label7
+			// label6
 			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(18, 273);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(45, 13);
-			this.label7.TabIndex = 11;
-			this.label7.Text = "Volume:";
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(6, 73);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(41, 13);
+			this.label6.TabIndex = 13;
+			this.label6.Text = "Speed:";
 			// 
 			// comboOutputVoice
 			// 
@@ -122,11 +122,30 @@
 			this.comboOutputDevice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.comboOutputDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboOutputDevice.Enabled = false;
 			this.comboOutputDevice.FormattingEnabled = true;
 			this.comboOutputDevice.Location = new System.Drawing.Point(100, 19);
 			this.comboOutputDevice.Name = "comboOutputDevice";
 			this.comboOutputDevice.Size = new System.Drawing.Size(236, 21);
 			this.comboOutputDevice.TabIndex = 6;
+			// 
+			// trackOutputVolume
+			// 
+			this.trackOutputVolume.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.trackOutputVolume.Location = new System.Drawing.Point(112, 273);
+			this.trackOutputVolume.Name = "trackOutputVolume";
+			this.trackOutputVolume.Size = new System.Drawing.Size(236, 45);
+			this.trackOutputVolume.TabIndex = 10;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(18, 273);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(45, 13);
+			this.label7.TabIndex = 11;
+			this.label7.Text = "Volume:";
 			// 
 			// groupBox2
 			// 
@@ -187,6 +206,7 @@
 			this.comboInputDevice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.comboInputDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboInputDevice.Enabled = false;
 			this.comboInputDevice.FormattingEnabled = true;
 			this.comboInputDevice.Location = new System.Drawing.Point(100, 17);
 			this.comboInputDevice.Name = "comboInputDevice";
@@ -223,25 +243,7 @@
 			this.buttonConfirm.Text = "Confirm";
 			this.buttonConfirm.UseVisualStyleBackColor = true;
 			// 
-			// trackOutputSpeed
-			// 
-			this.trackOutputSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.trackOutputSpeed.Location = new System.Drawing.Point(100, 73);
-			this.trackOutputSpeed.Name = "trackOutputSpeed";
-			this.trackOutputSpeed.Size = new System.Drawing.Size(236, 45);
-			this.trackOutputSpeed.TabIndex = 12;
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(6, 73);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(41, 13);
-			this.label6.TabIndex = 13;
-			this.label6.Text = "Speed:";
-			// 
-			// Audio
+			// Form_Audio
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -255,17 +257,17 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
-			this.Name = "Audio";
+			this.Name = "Form_Audio";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
 			this.Text = "Remator Audio Settings";
 			this.Load += new System.EventHandler(this.Audio_Load);
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.trackOutputSpeed)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.trackOutputVolume)).EndInit();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.trackInputGain)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.trackOutputSpeed)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
