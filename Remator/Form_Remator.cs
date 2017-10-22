@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
 using System.Windows.Forms;
+using System.Diagnostics;
 using NAudio;
 using NAudio.Wave;
 
@@ -13,6 +14,11 @@ namespace Remator
 {
 	public partial class Form_Remator : Form
 	{
+		private PerformanceCounter cpuUpdateCounter = new PerformanceCounter(
+			"Process", "% Processor Time",
+			Process.GetCurrentProcess().ProcessName
+		);
+
 		private static SpeechRecognitionEngine engine;
 
 		private static Dictionary<string, MethodInfo> commandDictionary = new Dictionary<string, MethodInfo>();
@@ -139,7 +145,7 @@ namespace Remator
 		private void Remator_Load(object sender, EventArgs e)
 		{
 			speech_Setup();
-		}
+	}
 
 		private void audioButton_Click(object sender, EventArgs e)
 		{
@@ -151,6 +157,11 @@ namespace Remator
 		{
 			var commandsForm = new Form_Commands();
 			commandsForm.ShowDialog();
+		}
+
+		private void cpuUpdateTimer_Tick(object sender, EventArgs e)
+		{
+			cpuUsageLabelInfo.Text = string.Format("{0:0.##}%", cpuUpdateCounter.NextValue());
 		}
 	}
 }

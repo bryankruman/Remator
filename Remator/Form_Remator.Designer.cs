@@ -44,8 +44,9 @@
 			this.commandsButton = new System.Windows.Forms.Button();
 			this.hideFromTaskbarCheckBox = new System.Windows.Forms.CheckBox();
 			this.startupCheckBox = new System.Windows.Forms.CheckBox();
-			this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+			this.notifyIcon = new System.Windows.Forms.NotifyIcon(this.components);
 			this.websiteLinkLabel = new System.Windows.Forms.LinkLabel();
+			this.cpuUpdateTimer = new System.Windows.Forms.Timer(this.components);
 			this.applicationGroupBox.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.accuracyTrackBar)).BeginInit();
 			this.SuspendLayout();
@@ -81,7 +82,7 @@
 			this.cpuUsageLabelInfo.Name = "cpuUsageLabelInfo";
 			this.cpuUsageLabelInfo.Size = new System.Drawing.Size(87, 13);
 			this.cpuUsageLabelInfo.TabIndex = 15;
-			this.cpuUsageLabelInfo.Text = "2.5%";
+			this.cpuUsageLabelInfo.Text = "0%";
 			this.cpuUsageLabelInfo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// statusLabelInfo
@@ -218,10 +219,10 @@
 			this.startupCheckBox.Text = "Launch on system startup";
 			this.startupCheckBox.UseVisualStyleBackColor = true;
 			// 
-			// notifyIcon1
+			// notifyIcon
 			// 
-			this.notifyIcon1.Text = "notifyIcon1";
-			this.notifyIcon1.Visible = true;
+			this.notifyIcon.Text = "notifyIcon1";
+			this.notifyIcon.Visible = true;
 			// 
 			// websiteLinkLabel
 			// 
@@ -234,6 +235,12 @@
 			this.websiteLinkLabel.TabStop = true;
 			this.websiteLinkLabel.Text = "Created by Bryan Kruman";
 			this.websiteLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// cpuUpdateTimer
+			// 
+			this.cpuUpdateTimer.Enabled = true;
+			this.cpuUpdateTimer.Interval = 1000;
+			this.cpuUpdateTimer.Tick += new System.EventHandler(this.cpuUpdateTimer_Tick);
 			// 
 			// Form_Remator
 			// 
@@ -260,7 +267,7 @@
 		private System.Windows.Forms.CheckBox hideFromTaskbarCheckBox;
 		private System.Windows.Forms.CheckBox startupCheckBox;
 		private System.Windows.Forms.Button startButton;
-		private System.Windows.Forms.NotifyIcon notifyIcon1;
+		private System.Windows.Forms.NotifyIcon notifyIcon;
 		private System.Windows.Forms.Label promptLabel;
 		private System.Windows.Forms.ComboBox promptComboBox;
 		private System.Windows.Forms.Button commandsButton;
@@ -273,6 +280,7 @@
 		private System.Windows.Forms.Label cpuUsageLabelInfo;
 		private System.Windows.Forms.Label statusLabelInfo;
 		private System.Windows.Forms.Label cpuUsageLabel;
+		private System.Windows.Forms.Timer cpuUpdateTimer;
 	}
 }
 
