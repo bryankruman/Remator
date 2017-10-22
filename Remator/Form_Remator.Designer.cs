@@ -207,6 +207,7 @@
 			this.hideFromTaskbarCheckBox.TabIndex = 1;
 			this.hideFromTaskbarCheckBox.Text = "Hide from taskbar";
 			this.hideFromTaskbarCheckBox.UseVisualStyleBackColor = true;
+			this.hideFromTaskbarCheckBox.CheckedChanged += new System.EventHandler(this.hideFromTaskbarCheckBox_CheckedChanged);
 			// 
 			// startupCheckBox
 			// 
@@ -251,6 +252,7 @@
 			this.Controls.Add(this.websiteLinkLabel);
 			this.Controls.Add(this.applicationGroupBox);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.MaximizeBox = false;
 			this.Name = "Form_Remator";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Remator";

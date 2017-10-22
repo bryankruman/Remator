@@ -163,5 +163,17 @@ namespace Remator
 		{
 			cpuUsageLabelInfo.Text = string.Format("{0:0.##}%", cpuUpdateCounter.NextValue());
 		}
+
+		private void hideFromTaskbarCheckBox_CheckedChanged(object sender, EventArgs e)
+		{
+			if (hideFromTaskbarCheckBox.Checked)
+			{
+				ShowInTaskbar = false;
+			}
+			else
+			{
+				ShowInTaskbar = true;
+			}
+		}
 	}
 }
