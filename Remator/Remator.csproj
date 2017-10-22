@@ -74,6 +74,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartupManager.cs" />
     <EmbeddedResource Include="Form_Audio.resx">
       <DependentUpon>Form_Audio.cs</DependentUpon>
     </EmbeddedResource>

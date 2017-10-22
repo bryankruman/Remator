@@ -220,6 +220,7 @@
 			this.startupCheckBox.TabIndex = 0;
 			this.startupCheckBox.Text = "Launch on system startup";
 			this.startupCheckBox.UseVisualStyleBackColor = true;
+			this.startupCheckBox.CheckedChanged += new System.EventHandler(this.startupCheckBox_CheckedChanged);
 			// 
 			// notifyIcon
 			// 

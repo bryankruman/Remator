@@ -145,7 +145,13 @@ namespace Remator
 		private void Remator_Load(object sender, EventArgs e)
 		{
 			speech_Setup();
-	}
+
+			startupCheckBox.Checked = Properties.Settings.Default.LaunchOnStartup;
+			StartupManager.SetStartupStatus(startupCheckBox.Checked);
+
+			hideFromTaskbarCheckBox.Checked = Properties.Settings.Default.HideFromTaskbar;
+			ShowInTaskbar = !hideFromTaskbarCheckBox.Checked;
+		}
 
 		private void audioButton_Click(object sender, EventArgs e)
 		{
@@ -166,14 +172,16 @@ namespace Remator
 
 		private void hideFromTaskbarCheckBox_CheckedChanged(object sender, EventArgs e)
 		{
-			if (hideFromTaskbarCheckBox.Checked)
-			{
-				ShowInTaskbar = false;
-			}
-			else
-			{
-				ShowInTaskbar = true;
-			}
+			ShowInTaskbar = !hideFromTaskbarCheckBox.Checked;
+			Properties.Settings.Default.HideFromTaskbar = hideFromTaskbarCheckBox.Checked;
+			Properties.Settings.Default.Save();
+		}
+
+		private void startupCheckBox_CheckedChanged(object sender, EventArgs e)
+		{
+			StartupManager.SetStartupStatus(startupCheckBox.Checked);
+			Properties.Settings.Default.LaunchOnStartup = startupCheckBox.Checked;
+			Properties.Settings.Default.Save();
 		}
 	}
 }
