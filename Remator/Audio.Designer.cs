@@ -29,40 +29,40 @@
 		private void InitializeComponent()
 		{
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.comboBox4 = new System.Windows.Forms.ComboBox();
-			this.trackBar3 = new System.Windows.Forms.TrackBar();
+			this.comboOutputSpeed = new System.Windows.Forms.ComboBox();
+			this.trackOutputVolume = new System.Windows.Forms.TrackBar();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
-			this.comboBox3 = new System.Windows.Forms.ComboBox();
+			this.comboOutputVoice = new System.Windows.Forms.ComboBox();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.comboOutputDevice = new System.Windows.Forms.ComboBox();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
-			this.progressBar1 = new System.Windows.Forms.ProgressBar();
-			this.trackBar1 = new System.Windows.Forms.TrackBar();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.inputMeter = new System.Windows.Forms.ProgressBar();
+			this.trackInputGain = new System.Windows.Forms.TrackBar();
+			this.comboInputDevice = new System.Windows.Forms.ComboBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
+			this.buttonClose = new System.Windows.Forms.Button();
 			this.groupBox3.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackOutputVolume)).BeginInit();
 			this.groupBox2.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackInputGain)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox3
 			// 
 			this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.groupBox3.Controls.Add(this.comboBox4);
-			this.groupBox3.Controls.Add(this.trackBar3);
+			this.groupBox3.Controls.Add(this.comboOutputSpeed);
+			this.groupBox3.Controls.Add(this.trackOutputVolume);
 			this.groupBox3.Controls.Add(this.label7);
 			this.groupBox3.Controls.Add(this.label6);
-			this.groupBox3.Controls.Add(this.comboBox3);
+			this.groupBox3.Controls.Add(this.comboOutputVoice);
 			this.groupBox3.Controls.Add(this.label5);
 			this.groupBox3.Controls.Add(this.label4);
-			this.groupBox3.Controls.Add(this.comboBox2);
+			this.groupBox3.Controls.Add(this.comboOutputDevice);
 			this.groupBox3.Location = new System.Drawing.Point(12, 149);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(342, 153);
@@ -70,24 +70,25 @@
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Output";
 			// 
-			// comboBox4
+			// comboOutputSpeed
 			// 
-			this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.comboOutputSpeed.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.comboBox4.FormattingEnabled = true;
-			this.comboBox4.Location = new System.Drawing.Point(100, 73);
-			this.comboBox4.Name = "comboBox4";
-			this.comboBox4.Size = new System.Drawing.Size(236, 21);
-			this.comboBox4.TabIndex = 12;
+			this.comboOutputSpeed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboOutputSpeed.FormattingEnabled = true;
+			this.comboOutputSpeed.Location = new System.Drawing.Point(100, 73);
+			this.comboOutputSpeed.Name = "comboOutputSpeed";
+			this.comboOutputSpeed.Size = new System.Drawing.Size(236, 21);
+			this.comboOutputSpeed.TabIndex = 12;
 			// 
-			// trackBar3
+			// trackOutputVolume
 			// 
-			this.trackBar3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.trackOutputVolume.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.trackBar3.Location = new System.Drawing.Point(100, 102);
-			this.trackBar3.Name = "trackBar3";
-			this.trackBar3.Size = new System.Drawing.Size(236, 45);
-			this.trackBar3.TabIndex = 10;
+			this.trackOutputVolume.Location = new System.Drawing.Point(100, 102);
+			this.trackOutputVolume.Name = "trackOutputVolume";
+			this.trackOutputVolume.Size = new System.Drawing.Size(236, 45);
+			this.trackOutputVolume.TabIndex = 10;
 			// 
 			// label7
 			// 
@@ -107,15 +108,16 @@
 			this.label6.TabIndex = 9;
 			this.label6.Text = "Speed:";
 			// 
-			// comboBox3
+			// comboOutputVoice
 			// 
-			this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.comboOutputVoice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(100, 46);
-			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(236, 21);
-			this.comboBox3.TabIndex = 8;
+			this.comboOutputVoice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboOutputVoice.FormattingEnabled = true;
+			this.comboOutputVoice.Location = new System.Drawing.Point(100, 46);
+			this.comboOutputVoice.Name = "comboOutputVoice";
+			this.comboOutputVoice.Size = new System.Drawing.Size(236, 21);
+			this.comboOutputVoice.TabIndex = 8;
 			// 
 			// label5
 			// 
@@ -135,15 +137,16 @@
 			this.label4.TabIndex = 6;
 			this.label4.Text = "Device:";
 			// 
-			// comboBox2
+			// comboOutputDevice
 			// 
-			this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.comboOutputDevice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(100, 19);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(236, 21);
-			this.comboBox2.TabIndex = 6;
+			this.comboOutputDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboOutputDevice.FormattingEnabled = true;
+			this.comboOutputDevice.Location = new System.Drawing.Point(100, 19);
+			this.comboOutputDevice.Name = "comboOutputDevice";
+			this.comboOutputDevice.Size = new System.Drawing.Size(236, 21);
+			this.comboOutputDevice.TabIndex = 6;
 			// 
 			// groupBox2
 			// 
@@ -151,9 +154,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.groupBox2.Controls.Add(this.label3);
 			this.groupBox2.Controls.Add(this.label2);
-			this.groupBox2.Controls.Add(this.progressBar1);
-			this.groupBox2.Controls.Add(this.trackBar1);
-			this.groupBox2.Controls.Add(this.comboBox1);
+			this.groupBox2.Controls.Add(this.inputMeter);
+			this.groupBox2.Controls.Add(this.trackInputGain);
+			this.groupBox2.Controls.Add(this.comboInputDevice);
 			this.groupBox2.Controls.Add(this.label1);
 			this.groupBox2.Location = new System.Drawing.Point(12, 12);
 			this.groupBox2.Name = "groupBox2";
@@ -180,34 +183,36 @@
 			this.label2.TabIndex = 4;
 			this.label2.Text = "Meter:";
 			// 
-			// progressBar1
+			// inputMeter
 			// 
-			this.progressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.inputMeter.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.progressBar1.Location = new System.Drawing.Point(100, 44);
-			this.progressBar1.Name = "progressBar1";
-			this.progressBar1.Size = new System.Drawing.Size(236, 23);
-			this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
-			this.progressBar1.TabIndex = 3;
+			this.inputMeter.Location = new System.Drawing.Point(100, 44);
+			this.inputMeter.Name = "inputMeter";
+			this.inputMeter.Size = new System.Drawing.Size(236, 23);
+			this.inputMeter.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+			this.inputMeter.TabIndex = 3;
 			// 
-			// trackBar1
+			// trackInputGain
 			// 
-			this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.trackInputGain.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.trackBar1.Location = new System.Drawing.Point(100, 80);
-			this.trackBar1.Name = "trackBar1";
-			this.trackBar1.Size = new System.Drawing.Size(236, 45);
-			this.trackBar1.TabIndex = 2;
+			this.trackInputGain.Location = new System.Drawing.Point(100, 80);
+			this.trackInputGain.Name = "trackInputGain";
+			this.trackInputGain.Size = new System.Drawing.Size(236, 45);
+			this.trackInputGain.TabIndex = 2;
 			// 
-			// comboBox1
+			// comboInputDevice
 			// 
-			this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+			this.comboInputDevice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(100, 17);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(236, 21);
-			this.comboBox1.TabIndex = 1;
+			this.comboInputDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboInputDevice.FormattingEnabled = true;
+			this.comboInputDevice.Location = new System.Drawing.Point(100, 17);
+			this.comboInputDevice.Name = "comboInputDevice";
+			this.comboInputDevice.Size = new System.Drawing.Size(236, 21);
+			this.comboInputDevice.TabIndex = 1;
+			this.comboInputDevice.Format += new System.Windows.Forms.ListControlConvertEventHandler(this.comboInputDevice_Format);
 			// 
 			// label1
 			// 
@@ -218,21 +223,21 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Device:";
 			// 
-			// button1
+			// buttonClose
 			// 
-			this.button1.Location = new System.Drawing.Point(279, 308);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 8;
-			this.button1.Text = "Close";
-			this.button1.UseVisualStyleBackColor = true;
+			this.buttonClose.Location = new System.Drawing.Point(279, 308);
+			this.buttonClose.Name = "buttonClose";
+			this.buttonClose.Size = new System.Drawing.Size(75, 23);
+			this.buttonClose.TabIndex = 8;
+			this.buttonClose.Text = "Close";
+			this.buttonClose.UseVisualStyleBackColor = true;
 			// 
 			// Audio
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(366, 341);
-			this.Controls.Add(this.button1);
+			this.Controls.Add(this.buttonClose);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -240,12 +245,13 @@
 			this.MinimizeBox = false;
 			this.Name = "Audio";
 			this.Text = "Remator Audio Settings";
+			this.Load += new System.EventHandler(this.Audio_Load);
 			this.groupBox3.ResumeLayout(false);
 			this.groupBox3.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackOutputVolume)).EndInit();
 			this.groupBox2.ResumeLayout(false);
 			this.groupBox2.PerformLayout();
-			((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.trackInputGain)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -253,21 +259,21 @@
 		#endregion
 
 		private System.Windows.Forms.GroupBox groupBox3;
-		private System.Windows.Forms.ComboBox comboBox4;
-		private System.Windows.Forms.TrackBar trackBar3;
+		private System.Windows.Forms.ComboBox comboOutputSpeed;
+		private System.Windows.Forms.TrackBar trackOutputVolume;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.ComboBox comboBox3;
+		private System.Windows.Forms.ComboBox comboOutputVoice;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.ComboBox comboBox2;
+		private System.Windows.Forms.ComboBox comboOutputDevice;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.ProgressBar progressBar1;
-		private System.Windows.Forms.TrackBar trackBar1;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ProgressBar inputMeter;
+		private System.Windows.Forms.TrackBar trackInputGain;
+		private System.Windows.Forms.ComboBox comboInputDevice;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button buttonClose;
 	}
 }

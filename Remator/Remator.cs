@@ -6,6 +6,8 @@ using System.Reflection;
 using System.Speech.Recognition;
 using System.Speech.Synthesis;
 using System.Windows.Forms;
+using NAudio;
+using NAudio.Wave;
 
 namespace Remator
 {
