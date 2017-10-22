@@ -16,7 +16,7 @@ namespace Remator
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Remator());
+			Application.Run(new Form_Remator());
 		}
 	}
 }

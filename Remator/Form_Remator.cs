@@ -11,7 +11,7 @@ using NAudio.Wave;
 
 namespace Remator
 {
-	public partial class Remator : Form
+	public partial class Form_Remator : Form
 	{
 		private static SpeechRecognitionEngine engine;
 
@@ -131,7 +131,7 @@ namespace Remator
 			synth.SpeakCompleted += new EventHandler<SpeakCompletedEventArgs>(synth_SpeechCompleted);
 		}
 
-		public Remator()
+		public Form_Remator()
 		{
 			InitializeComponent();
 		}
@@ -143,8 +143,14 @@ namespace Remator
 
 		private void audioButton_Click(object sender, EventArgs e)
 		{
-			var audioForm = new Audio();
+			var audioForm = new Form_Audio();
 			audioForm.ShowDialog();
+		}
+
+		private void commandsButton_Click(object sender, EventArgs e)
+		{
+			var commandsForm = new Form_Commands();
+			commandsForm.ShowDialog();
 		}
 	}
 }

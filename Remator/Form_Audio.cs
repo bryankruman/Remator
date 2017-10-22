@@ -15,16 +15,15 @@ using System.Speech.Synthesis;
 
 namespace Remator
 {
-	public partial class Audio : Form
+	public partial class Form_Audio : Form
 	{
-		public Audio()
+		public Form_Audio()
 		{
 			InitializeComponent();
 		}
 
 		private void Audio_Load(object sender, EventArgs e)
 		{
-
 			var enumerator = new MMDeviceEnumerator();
 
 			Dictionary<MMDevice, string> inputs = new Dictionary<MMDevice, string>();

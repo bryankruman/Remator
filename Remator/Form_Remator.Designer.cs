@@ -1,6 +1,6 @@
 ﻿namespace Remator
 {
-	partial class Remator
+	partial class Form_Remator
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -192,6 +192,7 @@
 			this.commandsButton.TabIndex = 0;
 			this.commandsButton.Text = "Commands";
 			this.commandsButton.UseVisualStyleBackColor = true;
+			this.commandsButton.Click += new System.EventHandler(this.commandsButton_Click);
 			// 
 			// hideFromTaskbarCheckBox
 			// 
@@ -224,6 +225,8 @@
 			// 
 			// websiteLinkLabel
 			// 
+			this.websiteLinkLabel.ActiveLinkColor = System.Drawing.Color.DodgerBlue;
+			this.websiteLinkLabel.LinkColor = System.Drawing.Color.Navy;
 			this.websiteLinkLabel.Location = new System.Drawing.Point(12, 284);
 			this.websiteLinkLabel.Name = "websiteLinkLabel";
 			this.websiteLinkLabel.Size = new System.Drawing.Size(334, 30);
@@ -232,14 +235,15 @@
 			this.websiteLinkLabel.Text = "Created by Bryan Kruman";
 			this.websiteLinkLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
-			// Remator
+			// Form_Remator
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(358, 323);
 			this.Controls.Add(this.websiteLinkLabel);
 			this.Controls.Add(this.applicationGroupBox);
-			this.Name = "Remator";
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Name = "Form_Remator";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Remator";
 			this.Load += new System.EventHandler(this.Remator_Load);

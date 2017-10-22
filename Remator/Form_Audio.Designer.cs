@@ -1,6 +1,6 @@
 ﻿namespace Remator
 {
-	partial class Audio
+	partial class Form_Audio
 	{
 		/// <summary>
 		/// Required designer variable.

@@ -49,26 +49,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Audio.cs">
+    <Compile Include="Form_Audio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Audio.Designer.cs">
-      <DependentUpon>Audio.cs</DependentUpon>
+    <Compile Include="Form_Audio.Designer.cs">
+      <DependentUpon>Form_Audio.cs</DependentUpon>
     </Compile>
     <Compile Include="Commands.cs" />
-    <Compile Include="Remator.cs">
+    <Compile Include="Form_Commands.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Remator.Designer.cs">
-      <DependentUpon>Remator.cs</DependentUpon>
+    <Compile Include="Form_Commands.Designer.cs">
+      <DependentUpon>Form_Commands.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Remator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Remator.Designer.cs">
+      <DependentUpon>Form_Remator.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Audio.resx">
-      <DependentUpon>Audio.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Audio.resx">
+      <DependentUpon>Form_Audio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Remator.resx">
-      <DependentUpon>Remator.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Commands.resx">
+      <DependentUpon>Form_Commands.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Remator.resx">
+      <DependentUpon>Form_Remator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
