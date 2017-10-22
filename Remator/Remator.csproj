@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Audio.Designer.cs">
+      <DependentUpon>Audio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Commands.cs" />
     <Compile Include="Remator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +61,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Audio.resx">
+      <DependentUpon>Audio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Remator.resx">
       <DependentUpon>Remator.cs</DependentUpon>
     </EmbeddedResource>
